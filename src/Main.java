@@ -8,7 +8,7 @@ public class Main extends PApplet {
 	int ancho;
 	int alto;
 	int tam;
-	int cubes[][];
+	
 	int x;
 	int y;
 
@@ -30,6 +30,7 @@ public class Main extends PApplet {
 		y = 20;
 
 	
+
 	}
 
 	public void draw() {
@@ -38,7 +39,7 @@ public class Main extends PApplet {
 		case (0):
 			background(100);
 
-			for (lineas = 0; lineas < 20;lineas++ ) {
+			for (lineas = 0; lineas < 20; lineas++) {
 				for (cuadros = 0; cuadros < 30; cuadros++) {
 					if (lineas % 2 == 0) {
 						if (cuadros % 2 == 0) {
@@ -59,23 +60,22 @@ public class Main extends PApplet {
 					}
 					rect(cuadros * ancho, lineas * alto, ancho, alto);
 				}
-				
+
 			}
 			break;
-			
+
 		}
 
 	}
 
 	public void mousePressed() {
 		if ((mouseX > 0 && mouseX < 600) && (mouseY > 0 && mouseY < 400)) {
-			
+
 		}
 
 	}
 
-	
 	public void move() {
-	
+
 	}
 }

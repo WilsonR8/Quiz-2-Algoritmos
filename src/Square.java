@@ -9,8 +9,7 @@ public class Square implements Runnable {
 
 	public Square(PApplet app) {
 		this.app = app;
-		px = (int) app.random(0, 400);
-		py = (int) app.random(0, 400);
+	
 	}
 
 	@Override
@@ -41,3 +40,4 @@ public class Square implements Runnable {
 	}*/
 
 }
+
